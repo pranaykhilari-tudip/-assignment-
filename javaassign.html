@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>String testing</h1></br>
+
+<input id="str" type="text"><br><br>
+<button type="button" onclick="isEmpty()">check it</button>
+<h2 id="msg" style="color:red"></h2>
+
+<script>
+function isEmpty() {
+    var message, x;
+    message = document.getElementById("msg");
+    message.innerHTML = "";
+    x = document.getElementById("str").value;
+       
+        if(x == "")
+          { 
+            document.getElementById("msg").innerHTML="you are not entering any string";
+          }
+        if(isNaN(x)) 
+          {
+            document.getElementById("msg").innerHTML=x+" is enter by you";
+          }
+       if( x = Number(x))
+        {
+           document.getElementById("msg").innerHTML="you enter other than string ";
+        }
+    
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
